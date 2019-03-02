@@ -182,20 +182,22 @@ EMBY.prototype.getLiveTvProgram = function(settings) {
 
 EMBY.prototype.getLiveTvPrograms = function(settings){
 	settings = settings || {};
-	var limit = settings.limit || this.limit;
+	var limit = settings.limit || "";
 	var MaxStartDate = settings.MaxStartDate || "";
 	var MinStartDate = settings.MinStartDate || "";
 	var isMovie = settings.isMovie || "";
 	var isSeries = settings.isSeries || "";
+	var StartIndex = settings.StartIndex || "";
 	var HasAired = settings.HasAired || "";
 	
-	
-	ajax.request(this.settings.ServerUrl + '/LiveTV/Programs?SortBy=sortName&SortOrder=Ascending&enableImageTypes=primary,thumb,backdrop'+
+	//was: SortBy=sortName&SortOrder=Ascending&
+	ajax.request(this.settings.ServerUrl + '/LiveTV/Programs?enableImageTypes=primary,thumb,backdrop'+
 		(limit ? "&limit=" + limit : "")+
 		(HasAired ? "&HasAired=" + HasAired : "")+
 		(MinStartDate ? "&MinStartDate=" + MinStartDate : "")+
 		(isMovie ? "&isMovie=" + isMovie : "")+
 		(isSeries ? "&isSeries=" + isSeries : "")+
+		(StartIndex ? "&StartIndex=" + StartIndex : "")+
 		(MaxStartDate ? "&MaxStartDate=" + MaxStartDate : "") , {
 		method: "GET",
 		headers: this.headers(), 
