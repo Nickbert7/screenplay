@@ -31,7 +31,7 @@
 	<script type="text/javascript" src="./script/models/livetv.items.js"></script>
 										
 	<script type="text/javascript">
-		dom.on(document, "DOMContentLoaded", function() {
+	dom.on(document, "DOMContentLoaded", function() {
 			var splash = new Splash();
 			var server = new Server();
 			var user = new User();
@@ -92,6 +92,7 @@
 				history.pushState({
 					id: event.detail.id,
 					name: event.detail.name,
+					sortName: event.detail.sortName,
 					activeButton: event.detail.activeButton,
 					action: "livetvitems"
 				}, "livetvitems");
@@ -138,7 +139,7 @@
 					action: "item",					
 					id: event.detail.id		
 				}, "item");
-				item.load(event.detail.id,false);
+			    item.load(event.detail.id,false);
 			});						
 
 			dom.on(document, "playItem", function(event) {

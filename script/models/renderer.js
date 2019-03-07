@@ -61,7 +61,7 @@ RENDERER.prototype.userAllTvItemsPlaceholder = function(data, settings) {
 			var column = Math.floor((parseInt(startIndex,10) + index) / 2);
 			var row = (startIndex + index) % 2;
 			var cid = "c_" + id + "_" + column;
-			var character = /^[a-zA-Z]$/.test(item.Name.toUpperCase().charAt(0)) ? item.Name.toUpperCase().charAt(0) : "sym";
+			var character = /^[a-zA-Z]$/.test(item.SortName.toUpperCase().charAt(0)) ? item.SortName.toUpperCase().charAt(0) : "sym";
 			//if (index == 0)
 			//	playerpopup.show({
 			//		duration: 5000,
@@ -102,6 +102,7 @@ RENDERER.prototype.userAllTvItemsPlaceholder = function(data, settings) {
 					dataset: {
 						backdrop: item.BackdropImageTags[0],
 						name: item.Name,
+						sortname: item.SortName.charAt(0).toUpperCase()+item.SortName.substring(1),
 						episode: item.EpisodeTitle ? item.EpisodeTitle : "",
 						channelid: item.ChannelId,
 						year: item.ProductionYear ? item.ProductionYear : "",
@@ -145,13 +146,24 @@ RENDERER.prototype.userAllTvItemsImages = function(left,right,id) {
 	var nodes = dom.querySelector('#'+id).childNodes;
 	nodes = Array.prototype.slice.call(nodes);
 	var location
-	var found = 0;
-	nodes.forEach(function(node,index){
-		location = dom.data(node,"location")
+	var a = 0;
+	var x = 0;
+	var z = nodes.length
+	for (x=Math.floor((a+z)/2); (z - a) > 10;x=Math.floor((a+z)/2))
+		   if (parseInt(dom.data(nodes[x],"location"),10) > parseInt(left,10))
+		      z = x
+		   else
+		      a = x	  
+     for (var x = a; x < nodes.length;x++){
+		location = dom.data(nodes[x],"location")
 		
 		if (location >= left && location <= right)
-			setBackgroundImage(node)
-	})
+			setBackgroundImage(nodes[x])
+		else
+		if (location > right)
+			break
+     }
+
 	function setBackgroundImage(node){
 		var PlayedPercentage
 		var imageId
@@ -228,7 +240,7 @@ RENDERER.prototype.userAllTvItems = function(data, settings) {
 			var column = Math.floor((parseInt(startIndex,10) + index) / 2);
 			var row = (startIndex + index) % 2;
 			var cid = "c_" + id + "_" + column;
-			var character = /^[a-zA-Z]$/.test(item.Name.toUpperCase().charAt(0)) ? item.Name.toUpperCase().charAt(0) : "sym";
+			var character = /^[a-zA-Z]$/.test(item.SortName.toUpperCase().charAt(0)) ? item.SortName.toUpperCase().charAt(0) : "sym";
 			//if (index == 0)
 			//	playerpopup.show({
 			//		duration: 5000,
@@ -361,7 +373,7 @@ RENDERER.prototype.userAllItems = function(data, settings) {
 			var column = Math.floor((startIndex + index) / 2);
 			var row = (startIndex + index) % 2;
 			var cid = "c_" + id + "_" + column;
-			var character = /^[a-zA-Z]$/.test(item.SortName.toUpperCase().charAt(0)) ? item.SortName.toUpperCase().charAt(0) : "sym";
+			var character = /^[a-zA-Z]$/.test(item.Name.toUpperCase().charAt(0)) ? item.Name.toUpperCase().charAt(0) : "sym";
 			if (!dom.exists("#" + cid)) {
 				dom.append("#" + id, {
 					nodeName: "div",
