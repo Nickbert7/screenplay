@@ -93,6 +93,7 @@
 					id: event.detail.id,
 					name: event.detail.name,
 					sortName: event.detail.sortName,
+					data: prefs.data,
 					activeButton: event.detail.activeButton,
 					action: "livetvitems"
 				}, "livetvitems");
@@ -134,7 +135,8 @@
 			dom.on(document, "mediaItemSelected", function(event) {
 				collection.close()
 				home.close();
-				livetv.close()
+				livetv.close();
+				livetvitems.close();
 				history.pushState({
 					action: "item",					
 					id: event.detail.id		
@@ -171,6 +173,7 @@
 				collection.close();
 				home.close();
 				livetv.close();
+				livetvitems.close();
 				summary.close();
 				home.load()
 			});	
@@ -185,6 +188,7 @@
 				if (event.state) {
 					collection.close();
 					livetv.close();
+					livetvitems.close();
 					summary.close();
 					home.close();
 					item.close();
@@ -209,6 +213,7 @@
 							break;	
 							
 						case "livetvitems":
+							prefs.data = event.state.data
 							livetvitems.load(event.state,true);					
 							break;	
 							
@@ -239,6 +244,7 @@
 				collection.close();	
 				home.close();
 				livetv.close();
+				livetvitems.close();
 				summary.close();
 				home.load();
 			});
@@ -415,8 +421,10 @@
 			dom.on("#view", "mousewheel", function(event) {
 				if (event.deltaY) {
 					this.scrollLeft += event.deltaY;
+					this.scrollTop += event.deltaY;
 				} else {
 					this.scrollLeft -= event.wheelDeltaY;
+					this.scrollTop -= event.wheelDeltaY;
 				}
 			});	
 								
@@ -468,6 +476,7 @@
  	<div id="homeLink" style="display: none;"><a href="#" class="home-link"><span class="glyphicon home"></span></a></div> 
 	</div>
 	<div id="view"></div>
+	<div id="footer"></div>
 	<div id="details"></div>
 </body>
 </html>
