@@ -234,17 +234,17 @@ a {
 
 .home-link:focus, .settings-link:focus, .server-link:focus, .user-link:focus {
 	outline: none;
-	border: 2px solid rgba(82, 181, 75, 0.5);	
+	border: 2px solid #00A4DC;	
 	background: #222;	
 	color: #fff;
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);		
+	box-shadow: 0 0 20px #00A4DC;		
 }
 
 .home-link:hover, .settings-link:hover, .server-link:hover, .user-link:hover {
-	border: 2px solid rgba(82, 181, 75, 0.5);	
+	border: 2px solid #00A4DC;	
 	background: #111;
 	color: #fff;		
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.3);	
+	box-shadow: 0 0 20px #00A4DC;	
 }
 
 .user-image {
@@ -257,7 +257,7 @@ a {
 	border-radius: 25px;
 	margin-top: 5px;
 	margin-right: 10px;
-	background-color: rgb(82, 181, 75);		
+	background-color: #00A4DC;		
 }
 
 .server-name, .user-name {
@@ -381,13 +381,13 @@ input:focus {
 	outline: none;
 	border: 2px solid rgba(82, 181, 75, 0.5);	
 	background: linear-gradient(#333, #000);
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);		
+	box-shadow: 0 0 20px #00A4DC;		
 }
 
 input:hover {
 	border: 2px solid rgba(82, 181, 75, 0.5);	
 	background: linear-gradient(#111, #000);
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.3);	
+	box-shadow: 0 0 20px #00A4DC;	
 }
 
 .key-view {
