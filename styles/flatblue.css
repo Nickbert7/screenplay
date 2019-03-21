@@ -237,14 +237,14 @@ a {
 	border: 2px solid #00A4DC;	
 	background: #222;	
 	color: #fff;
-	box-shadow: 0 0 20px #00A4DC;		
+	box-shadow: none;		
 }
 
 .home-link:hover, .settings-link:hover, .server-link:hover, .user-link:hover {
 	border: 2px solid #00A4DC;	
 	background: #111;
 	color: #fff;		
-	box-shadow: 0 0 20px #00A4DC;	
+	box-shadow: none;	
 }
 
 .user-image {
@@ -379,15 +379,15 @@ input {
 
 input:focus {
 	outline: none;
-	border: 2px solid rgba(82, 181, 75, 0.5);	
+	border: 2px solid #00A4DC;	
 	background: linear-gradient(#333, #000);
-	box-shadow: 0 0 20px #00A4DC;		
+	box-shadow: none;
 }
 
 input:hover {
-	border: 2px solid rgba(82, 181, 75, 0.5);	
+	border: 2px solid #00A4DC;	
 	background: linear-gradient(#111, #000);
-	box-shadow: 0 0 20px #00A4DC;	
+	box-shadow: none;	
 }
 
 .key-view {
@@ -494,20 +494,20 @@ input:hover {
 
 .key-user:focus {
 	outline: none;
-	border: 2px solid rgba(82, 181, 75, 0.5);	
-	background: #444;
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);		
+	border: 2px solid #00A4DC;	
+	background: #101010;
+	box-shadow: none;		
 }
 
 .key-user:hover {
-	border: 2px solid rgba(82, 181, 75, 0.5);	
-	background: #444;
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.3);	
+	border: 2px solid #00A4DC;	
+	background: #101010;
+	box-shadow: none;	
 }
 
 .key-user-selected {
-	border: 2px solid rgba(82, 181, 75, 0.5);	
-	background: #444;
+	border: 2px solid #00A4DC;	
+	background: #101010;
 }
 
 .key-user-image {	
@@ -548,7 +548,7 @@ input:hover {
     background-color: rgba(0,0,0,0.7);
 	text-align: center;		
 	border: 2px solid rgb(82,181,75);
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);		
+	box-shadow: none;		
 }
 
 .playerpopup, .message {
@@ -563,7 +563,7 @@ input:hover {
     background-color: rgba(0,0,0,0.7);
 	text-align: center;		
 	border: 2px solid rgb(82,181,75);
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);		
+	box-shadow: none;		
 }
 
 .message-success {
@@ -665,13 +665,13 @@ input:hover {
 	outline: none;
 	background-color: rgba(82, 181, 75,0.3);	
 	border: 2px solid rgba(82, 181, 75, 1);	
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);	
+	box-shadow: none;	
 }
 
 .user-views-item:hover, .user-views-item-settings:hover, .user-views-item-livetv:hover {
 	outline: none;
-	border: 2px solid rgba(82, 181, 75, 0.5);	
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.3);	
+	border: 2px solid #00A4DC;	
+	box-shadow: none;	
 }
 .user-views-item-click {
 	display: block;
@@ -788,12 +788,12 @@ input:hover {
 .child-item:focus, .latest-item:focus {
 	outline: none;
 	border: 2px solid rgba(82, 181, 75, 1);	
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);		
+	box-shadow: none;		
 }
 
 .child-item:hover, .latest-item:hover {
-	border: 2px solid rgba(82, 181, 75, 0.5);	
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.3);		
+	border: 2px solid #00A4DC;	
+	box-shadow: none;		
 }
 
 .latest-items-footer {
@@ -817,7 +817,7 @@ input:hover {
 
 .index-item:hover, .latest-items-more:hover {
 	outline: none;
-	border: 2px solid rgba(82, 181, 75, 0.5);		
+	border: 2px solid #00A4DC;		
 }
 .cover {
     position: relative;
@@ -1127,14 +1127,14 @@ button:hover {
 .viewItem_highlight {
 	outline: none;
 	border: 2px solid rgba(82, 181, 75, 1);	
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);		
+	box-shadow: none;		
 }
 .viewItem_Selected {
 	outline: none;
 	border: 2px solid rgba(82, 181, 75, 1);	
 	background-color: #00f;
 	color: #fff;
-	box-shadow: 0 0 20px rgba(82, 181, 75, 0.8);		
+	box-shadow: none;		
 }
 .viewItem_Selected::selection{
 	background: #00f;
