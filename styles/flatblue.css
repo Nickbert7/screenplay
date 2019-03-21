@@ -475,7 +475,7 @@ input:hover {
 }
 
 .key-user-select::-webkit-scrollbar-thumb {
-	background-color: rgb(82, 181, 75);	
+	background-color: #101010;	
 }
 
 .key-user-select::-webkit-scrollbar-track {
@@ -617,7 +617,7 @@ input:hover {
 	text-decoration: none;
 	color: #fff;
 	background-color: rgba(40, 40, 40, 0.3);
-	border: 2px solid rgba(82, 181, 75, 1);	
+	border: 2px solid #00A4DC;	
 	font-size: 30px;
 	
 }
@@ -629,8 +629,8 @@ input:hover {
 	padding: 10px;
 	text-decoration: none;
 	color: #fff;
-	background-color: rgba(82, 181, 75, 0.3);
-	border: 2px solid rgba(82, 181, 75, 1);	
+	background-color: #101010;
+	border: 2px solid #00A4DC;	
 	font-size: 30px;
 	
 }
@@ -642,8 +642,8 @@ input:hover {
 	padding: 10px;
 	text-decoration: none;
 	color: #fff;
-	background-color: rgba(82, 181, 75, 0.3);
-	border: 2px solid rgba(82, 181, 75, 1);	
+	background-color: #101010;
+	border: 2px solid #00A4DC;	
 	font-size: 30px;
 	
 }
@@ -663,8 +663,8 @@ input:hover {
 
 .user-views-item:focus, .user-views-item-settings:focus, .user-views-item-livetv:focus {
 	outline: none;
-	background-color: rgba(82, 181, 75,0.3);	
-	border: 2px solid rgba(82, 181, 75, 1);	
+	background-color: #101010;	
+	border: 2px solid #00A4DC;	
 	box-shadow: none;	
 }
 
@@ -787,7 +787,7 @@ input:hover {
 
 .child-item:focus, .latest-item:focus {
 	outline: none;
-	border: 2px solid rgba(82, 181, 75, 1);	
+	border: 2px solid #00A4DC;	
 	box-shadow: none;		
 }
 
@@ -811,8 +811,8 @@ input:hover {
 
 .index-item:focus, .latest-items-more:focus {
 	outline: none;
-	background-color: rgba(82, 181, 75, 0.3);		
-	border: 2px solid rgba(82, 181, 75, 1);	
+	background-color: #101010;		
+	border: 2px solid #00A4DC;	
 }
 
 .index-item:hover, .latest-items-more:hover {
@@ -1126,12 +1126,12 @@ button:hover {
 }
 .viewItem_highlight {
 	outline: none;
-	border: 2px solid rgba(82, 181, 75, 1);	
+	border: 2px solid #00A4DC;	
 	box-shadow: none;		
 }
 .viewItem_Selected {
 	outline: none;
-	border: 2px solid rgba(82, 181, 75, 1);	
+	border: 2px solid #00A4DC;	
 	background-color: #00f;
 	color: #fff;
 	box-shadow: none;		
