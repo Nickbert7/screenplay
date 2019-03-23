@@ -13,7 +13,7 @@ input[type="number"] {
 body {
 	background-color: #000;
 	overflow: hidden;
-	font-family:  Calibri, 'LG Display', Geneva, Verdana, sans-serif;
+	font-family: -apple-system, "Helvetica", system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", 'Open Sans', sans-serif;
 	font-size: 22px;
 	margin: 0;
 	padding: 0;
@@ -659,18 +659,16 @@ input:hover {
 	padding: 10px;
 	text-decoration: none;
 	color: #fff;
-	background-color: rgba(40, 40, 40, 0.3);
-	border: 2px solid transparent;
 	font-size: 30px;
 }
 
 .user-views-item:focus, .user-views-item-settings:focus, .user-views-item-livetv:focus {
-	font-size: 40px;
+	font-size: 35px;
    	color: #00A4DC;	
 }
 
 .user-views-item:hover, .user-views-item-settings:hover, .user-views-item-livetv:hover {
-	font-size: 40px;
+	font-size: 35px;
    	color: #00A4DC;	
 }
 .user-views-item-click {
