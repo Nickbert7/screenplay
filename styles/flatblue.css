@@ -665,16 +665,13 @@ input:hover {
 }
 
 .user-views-item:focus, .user-views-item-settings:focus, .user-views-item-livetv:focus {
-	outline: none;
-	background-color: #101010;	
-	border: 2px solid #00A4DC;	
-	box-shadow: none;	
+	font-size: 40px;
+   	color: #00A4DC;	
 }
 
 .user-views-item:hover, .user-views-item-settings:hover, .user-views-item-livetv:hover {
-	outline: none;
-	border: 2px solid #00A4DC;	
-	box-shadow: none;	
+	font-size: 40px;
+   	color: #00A4DC;	
 }
 .user-views-item-click {
 	display: block;
