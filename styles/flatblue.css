@@ -664,11 +664,13 @@ input:hover {
 
 .user-views-item:focus, .user-views-item-settings:focus, .user-views-item-livetv:focus {
 	font-size: 35px;
+	font-weight: bold;
    	color: #00A4DC;	
 }
 
 .user-views-item:hover, .user-views-item-settings:hover, .user-views-item-livetv:hover {
-	font-size: 35px;
+	font-size: 35px;	
+	font-weight: bold;
    	color: #00A4DC;	
 }
 .user-views-item-click {
