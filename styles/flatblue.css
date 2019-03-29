@@ -549,7 +549,7 @@ input:hover {
 	border-radius: 12px;	
     background-color: rgba(0,0,0,0.7);
 	text-align: center;		
-	border: 2px solid rgb(82,181,75);
+	border: 2px solid var(--main-color);
 	box-shadow: none;		
 }
 
@@ -564,7 +564,7 @@ input:hover {
 	border-radius: 12px;	
     background-color: rgba(0,0,0,0.7);
 	text-align: center;		
-	border: 2px solid rgb(82,181,75);
+	border: 2px solid var(--main-color);
 	box-shadow: none;		
 }
 
