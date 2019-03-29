@@ -236,16 +236,15 @@ a {
 }
 
 .home-link:focus, .settings-link:focus, .server-link:focus, .user-link:focus {
-	font-size: 35px;
+	font-size: 40px;
 	font-weight: bold;
    	color: #00A4DC;		
 }
 
 .home-link:hover, .settings-link:hover, .server-link:hover, .user-link:hover {
-	border: 2px solid #00A4DC;	
-	background: #111;
-	color: #fff;		
-	box-shadow: none;	
+	font-size: 40px;
+	font-weight: bold;
+   	color: #00A4DC;		
 }
 
 .user-image {
@@ -769,9 +768,10 @@ input:hover {
 }
 
 .latest-items-header {
-	color: #f9f9f9;
+	color: #00A4DC;
+	border-bottom: #00A4DC solid 4px;
 	font-size: 25px;
-	padding: 1px 1px 10px 15px;	
+	padding: 1px 1px 8px 15px;	
 	text-transform: uppercase;
 }
 
