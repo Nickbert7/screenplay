@@ -1,6 +1,11 @@
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+:root {
+  --main-color: #00A4DC; 
+  --main-bg-color: #101010;
+}
+
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -236,13 +241,13 @@ a {
 .home-link:focus, .settings-link:focus, .server-link:focus, .user-link:focus {
 	font-size: 30px;
 	font-weight: bold;
-   	color: #00A4DC;		
+   	color: var(--main-color);		
 }
 
 .home-link:hover, .settings-link:hover, .server-link:hover, .user-link:hover {
 	font-size: 30px;
 	font-weight: bold;
-   	color: #00A4DC;		
+   	color: var(--main-color);		
 }
 
 .user-image {
@@ -255,7 +260,7 @@ a {
 	border-radius: 25px;
 	margin-top: 5px;
 	margin-right: 10px;
-	background-color: #00A4DC;		
+	background-color: var(--main-color);		
 }
 
 .server-name, .user-name {
@@ -376,13 +381,13 @@ input {
 
 input:focus {
 	outline: none;
-	border: 2px solid #00A4DC;	
+	border: 2px solid var(--main-color);	
 	background: linear-gradient(#333, #000);
 	box-shadow: none;
 }
 
 input:hover {
-	border: 2px solid #00A4DC;	
+	border: 2px solid var(--main-color);	
 	background: linear-gradient(#111, #000);
 	box-shadow: none;	
 }
@@ -472,7 +477,7 @@ input:hover {
 }
 
 .key-user-select::-webkit-scrollbar-thumb {
-	background-color: #101010;	
+	background-color: var(--main-bg-color);	
 }
 
 .key-user-select::-webkit-scrollbar-track {
@@ -491,20 +496,20 @@ input:hover {
 
 .key-user:focus {
 	outline: none;
-	border: 2px solid #00A4DC;	
-	background: #101010;
+	border: 2px solid var(--main-color);	
+	background: var(--main-bg-color);
 	box-shadow: none;		
 }
 
 .key-user:hover {
-	border: 2px solid #00A4DC;	
-	background: #101010;
+	border: 2px solid var(--main-color);	
+	background: var(--main-bg-color);
 	box-shadow: none;	
 }
 
 .key-user-selected {
-	border: 2px solid #00A4DC;	
-	background: #101010;
+	border: 2px solid var(--main-color);	
+	background: var(--main-bg-color);
 }
 
 .key-user-image {	
@@ -614,7 +619,7 @@ input:hover {
 	text-decoration: none;
 	color: #fff;
 	background-color: rgba(40, 40, 40, 0.3);
-	border: 2px solid #00A4DC;	
+	border: 2px solid var(--main-color);	
 	font-size: 30px;
 	
 }
@@ -626,8 +631,8 @@ input:hover {
 	padding: 10px;
 	text-decoration: none;
 	color: #fff;
-	background-color: #101010;
-	border: 2px solid #00A4DC;	
+	background-color: var(--main-bg-color);
+	border: 2px solid var(--main-color);	
 	font-size: 30px;
 	
 }
@@ -639,8 +644,8 @@ input:hover {
 	padding: 10px;
 	text-decoration: none;
 	color: #fff;
-	background-color: #101010;
-	border: 2px solid #00A4DC;	
+	background-color: var(--main-bg-color);
+	border: 2px solid var(--main-color);	
 	font-size: 30px;
 	
 }
@@ -659,13 +664,13 @@ input:hover {
 .user-views-item:focus, .user-views-item-settings:focus, .user-views-item-livetv:focus {
 	font-size: 35px;
 	font-weight: bold;
-   	color: #00A4DC;	
+   	color: var(--main-color);	
 }
 
 .user-views-item:hover, .user-views-item-settings:hover, .user-views-item-livetv:hover {
 	font-size: 35px;	
 	font-weight: bold;
-   	color: #00A4DC;	
+   	color: var(--main-color);	
 }
 .user-views-item-click {
 	display: block;
@@ -765,8 +770,8 @@ input:hover {
 }
 
 .latest-items-header {
-	color: #00A4DC;
-	border-bottom: #00A4DC solid 4px;
+	color: var(--main-color);
+	border-bottom: var(--main-color) solid 4px;
 	font-size: 25px;
 	padding: 1px 1px 8px 15px;	
 	text-transform: uppercase;
@@ -781,12 +786,12 @@ input:hover {
 
 .child-item:focus, .latest-item:focus {
 	outline: none;
-	border: 2px solid #00A4DC;	
+	border: 2px solid var(--main-color);	
 	box-shadow: none;		
 }
 
 .child-item:hover, .latest-item:hover {
-	border: 2px solid #00A4DC;	
+	border: 2px solid var(--main-color);	
 	box-shadow: none;		
 }
 
@@ -806,13 +811,13 @@ input:hover {
 .index-item:focus, .latest-items-more:focus {
 	font-size: 30px;
 	font-weight: bold;
-   	color: #00A4DC;		
+   	color: var(--main-color);		
 }
 
 .index-item:hover, .latest-items-more:hover {
 	font-size: 30px;
 	font-weight: bold;
-   	color: #00A4DC;		
+   	color: var(--main-color);		
 }
 .cover {
     position: relative;
@@ -1121,12 +1126,12 @@ button:hover {
 }
 .viewItem_highlight {
 	outline: none;
-	border: 2px solid #00A4DC;	
+	border: 2px solid var(--main-color);	
 	box-shadow: none;		
 }
 .viewItem_Selected {
 	outline: none;
-	border: 2px solid #00A4DC;	
+	border: 2px solid var(--main-color);	
 	background-color: #00f;
 	color: #fff;
 	box-shadow: none;		
