@@ -236,11 +236,9 @@ a {
 }
 
 .home-link:focus, .settings-link:focus, .server-link:focus, .user-link:focus {
-	outline: none;
-	border: 2px solid #00A4DC;	
-	background: #222;	
-	color: #fff;
-	box-shadow: none;		
+	font-size: 35px;
+	font-weight: bold;
+   	color: #00A4DC;		
 }
 
 .home-link:hover, .settings-link:hover, .server-link:hover, .user-link:hover {
