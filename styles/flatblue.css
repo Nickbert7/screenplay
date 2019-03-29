@@ -806,14 +806,15 @@ input:hover {
 }
 
 .index-item:focus, .latest-items-more:focus {
-	outline: none;
-	background-color: #101010;		
-	border: 2px solid #00A4DC;	
+	font-size: 35px;
+	font-weight: bold;
+   	color: #00A4DC;		
 }
 
 .index-item:hover, .latest-items-more:hover {
-	outline: none;
-	border: 2px solid #00A4DC;		
+	font-size: 35px;
+	font-weight: bold;
+   	color: #00A4DC;		
 }
 .cover {
     position: relative;
