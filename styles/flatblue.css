@@ -772,6 +772,7 @@ input:hover {
 	font-size: 25px;
 	padding: 1px 1px 8px 15px;	
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .child-item, .latest-item {
