@@ -805,13 +805,13 @@ input:hover {
 }
 
 .index-item:focus, .latest-items-more:focus {
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: bold;
    	color: #00A4DC;		
 }
 
 .index-item:hover, .latest-items-more:hover {
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: bold;
    	color: #00A4DC;		
 }
