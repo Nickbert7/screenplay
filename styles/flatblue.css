@@ -764,7 +764,11 @@ input:hover {
 }
 
 .child-item:focus, .latest-item:focus {
+	z-index: 99;
+	transform: scale(1.1);
 	outline: none;
+	position: relative;
+	transition: transform .2s;
 	border: 2px solid var(--main-color);	
 	box-shadow: none;		
 }
