@@ -705,8 +705,7 @@ input:hover {
 	position: relative;
 	display: inline-block;
 	height: 490px;	
-	margin-right: 20px;
- 	overflow: hidden;	
+	margin-right: 20px;	
 	vertical-align: top;
 	white-space: nowrap;	  	
 }
