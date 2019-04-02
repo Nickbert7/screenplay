@@ -749,7 +749,7 @@ input:hover {
 
 .latest-items-header {
 	color: var(--main-color);
-	border-bottom: var(--main-color) solid 5px;
+	border-bottom: var(--main-color) solid 2px;
 	font-size: 25px;
 	padding: 1px 1px 8px 15px;	
 	text-transform: uppercase;
@@ -759,7 +759,8 @@ input:hover {
 .child-item, .latest-item {
 	display: block;
 	margin: 5px;
-	transition: transform .2s;		
+	transition: transform .2s;
+	border: 2px solid transparent;
 }
 
 .child-item:focus, .latest-item:focus {
@@ -767,7 +768,7 @@ input:hover {
 	transform: scale(1.1);
 	outline: none;
 	position: relative;
-	border: 5px solid var(--main-color);	
+	border: 2px solid var(--main-color);	
 	box-shadow: none;		
 }
 
@@ -776,7 +777,7 @@ input:hover {
 	transform: scale(1.1);
 	outline: none;
 	position: relative;
-	border: 5px solid var(--main-color);	
+	border: 2px solid var(--main-color);	
 	box-shadow: none;		
 }
 
