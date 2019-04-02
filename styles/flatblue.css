@@ -568,9 +568,9 @@ input:hover {
 }
 
 .message-success {
-	border: 2px solid #0f0;
+	border: 2px solid var(--main-color);
 	/*background: linear-gradient(#000, #030);*/	
-	box-shadow: 0 0 20px rgba(0, 255, 0, 1.9);	
+	box-shadow: 0 0 20px var(--main-color);	
 }
 
 .message-error {
