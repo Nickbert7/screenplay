@@ -284,7 +284,8 @@ a {
 	padding: 20px 50px;
 	margin:0;
 	overflow-x: scroll;
-	overflow-y: hidden;
+	scroll-behavior: smooth;
+	scroll-padding: 0px 750px;
 }
 
 #view::-webkit-scrollbar {
@@ -845,8 +846,8 @@ input:hover {
 }
 
 .cover-photoalbum-large, .cover-musicalbum-large, .cover-photo-large, .cover-musicartist-large, .cover-audio-large, .cover-folder-large {
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 }
 
 .cover-photo, .cover-photoalbum, .cover-musicalbum, .cover-audio, .cover-musicartist, .cover-folder, .cover-musicartist {
@@ -883,8 +884,8 @@ input:hover {
 }
 
 .view-1080 .cover-photoalbum-large, .view-1080 .cover-musicalbum-large, .view-1080 .cover-photo-large, .view-1080 .cover-musicartist-large, .view-1080 .cover-audio-large, .view-1080 .cover-folder-large {
-	width: 720px;
-	height: 720px;
+	width: 600px;
+	height: 600px;
 }
 
 .view-1080 .cover-photo, .view-1080 .cover-photoalbum, .view-1080 .cover-musicalbum, .view-1080 .cover-audio, .view-1080 .cover-musicartist, .view-1080 .cover-folder, .view-1080 .cover-musicartist {
