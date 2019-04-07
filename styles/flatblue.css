@@ -581,7 +581,7 @@ input:hover {
 }
 
 .message-notice {
-	border: 2px solid #00f;
+	border: 2px solid var(--main-color);
 	/*background: linear-gradient(#000, #300);*/	
 	box-shadow: 0 0 20px rgba(0, 0, 255, 1.9);	
 }
@@ -900,17 +900,14 @@ input:hover {
 }
 
 .cover-title {
-	display: none;
+	display: block;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 26px;
 	padding: 5px;
-	background-color: rgba(5, 5, 5, 0.6);	
-	text-overflow: ellipsis;	
- 	overflow: hidden;
- 	white-space: nowrap;	
+	background-color: rgba(5, 5, 5, 0.6);
+ 	white-space: initial;	
 	font-size: 22px;
 }
 
