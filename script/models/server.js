@@ -127,7 +127,21 @@ Server.prototype.add = function() {
 	});
 	dom.on("#serverUrl", "keydown", function(event) {
 		event.preventDefault();
-		event.stopPropagation();
+	    event.stopPropagation();
+        if ((event.which == keys.KEY_RED && Math.floor(prefs.redButton) == 1)
+	    || (event.which == keys.KEY_GREEN && Math.floor(prefs.greenButton) == 1)
+		|| (event.which == keys.KEY_YELLOW && Math.floor(prefs.yellowButton) == 1)
+		|| (event.which == keys.KEY_BLUE && Math.floor(prefs.blueButton) == 1))
+		{
+			storage.remove("emby.settings.current.server");
+			storage.remove("emby.settings.current.user");
+			storage.remove("emby.settings.servers");	
+			storage.remove("emby.settings.prefs");	
+			location.reload(true);
+		}
+        if ((event.which == keys.KEY_RED || event.which == keys.KEY_GREEN || event.which == keys.KEY_YELLOW || event.which == keys.KEY_BLUE)
+        ||  (event.which == keys.KEY_STOP || event.which == keys.KEY_PLAY || event.which == keys.KEY_PAUSE || event.which == keys.KEY_REWIND || event.which == keys.KEY_FAST_FWD))
+        	return
 		switch(event.which) {
 		case keys.KEY_OK:
             enterPress(event);
@@ -198,6 +212,8 @@ Server.prototype.add = function() {
 	function keyPress(key)
 	{
 		if (key.length == 1){
+			if (key === keys.KEY_RED || key === keys.KEY_YELLOW || key === keys.KEY_BLUE || key === keys.KEY_GREEN)
+				return;
 			var value = dom.val("#serverUrl");
 		    dom.val("#serverUrl", value + key);
 		}
